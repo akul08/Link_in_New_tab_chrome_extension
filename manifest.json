@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Link in New Tab",
+  "description": "This extension will open a link in new tab.",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+        "js": ["background.js"],
+        "matches": ["*://*/*"]
+    }],
+  "permissions": [
+   "activeTab"
+   ]
+}
